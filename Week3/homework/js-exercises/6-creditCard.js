@@ -11,7 +11,7 @@ function creditCardValidator(number) {
   } else if (isSame(number)) {
     return "Error: Only one type of number!";
 
-  } else if (isGreaterThanSixteen(number)) {
+  } else if (isnotGreaterThanSixteen(number)) {
     return "Error: Sum of your credit card numbers less than 16!";
 
   } else if (isOdd(number)) {
@@ -39,7 +39,7 @@ function isSame(number) {
   }
   return false;
 }
-function isGreaterThanSixteen(number) {
+function isnotGreaterThanSixteen(number) {
   let sum = 0;
   while (number) {
     sum += number % 10;
